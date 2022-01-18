@@ -6,33 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/estilos.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="IMG/favicon.png">
+    <title>Inicio</title>
 </head>
 <body>
     <!-- HEADER -->
-    <header class="bg-header">
-        <div class="container">
-            <div class="row pt-5 justify-content-center">
-                <div class="col-12 col-lg-10 text-center mt-5">
-                    <h1 class="display-1 text-light " style="text-shadow: 0px 3px 6px #000000;">Lorem, ipsum dolor.</h1>
-                    <p class="fs-4 text-light mt-5"style="text-shadow: 0px 3px 6px #000000;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequuntur consequatur eaque deleniti debitis veritatis facilis </p>
-                </div>
-            </div>
+    <header>
+        <div class="overlay"></div>
+        <div class="absolute">
+            <img class="img-fluid" src="IMG/Logo.png" width="350px" alt="">
         </div>
+        <video onloadedmetadata="this.muted=true" autoplay loop>
+            <source src="IMG/header.mp4">
+        </video>
     </header>
 
     <!-- IFRAME -->
     <section>
-        <div class="container">
+        <div class="container text-white">
             <div class="row pt-5">
                 <div class="col text-center">
-                    <h1>Iframe</h1>
-                    <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus in eos, laborum ratione recusandae ex fugit, obcaecati laudantium eligendi quam maiores, repudiandae aspernatur officiis fuga!</p>
+                    <h1>Ubicación</h1>
+                    <p class="fs-5">Estamos ubicados en <br>  Calle Topacio #4000 Paseo de las Torres, Mazatlán Sin.</p>
                 </div>
             </div>
-            <div class="row  pb-3">
+            <div class="row  pb-5">
                 <div class="col ">
-                    <iframe class="mx-auto d-none d-lg-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.030229066696!2d-106.44324895635694!3d23.24198702297729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f54a0479b876b%3A0xff74b77c6d02a81d!2sAT%26T!5e0!3m2!1ses-419!2smx!4v1642106795935!5m2!1ses-419!2smx" width="1000" height="600" style="box-shadow: 0 .5rem 1rem rgb(56, 56, 56)!important;" allowfullscreen="" loading="lazy">  </iframe>
+
+
+                    <iframe class="mx-auto d-none d-lg-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.467910939131!2d-106.42475948555328!3d23.26244191315903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f534b817c1123%3A0x60c7b9324c3e8e35!2sTopacio%204000%2C%20Paseo%20de%20las%20Torres%2C%2082124%20Mazatl%C3%A1n%2C%20Sin.!5e0!3m2!1ses-419!2smx!4v1642463913384!5m2!1ses-419!2smx" width="1000" height="600" style="box-shadow: 0 .5rem 1rem rgb(56, 56, 56)!important;" allowfullscreen="" loading="lazy"></iframe>
+
                     <iframe class="iframe-responsive mx-auto d-block d-lg-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.030229066696!2d-106.44324895635694!3d23.24198702297729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f54a0479b876b%3A0xff74b77c6d02a81d!2sAT%26T!5e0!3m2!1ses-419!2smx!4v1642106795935!5m2!1ses-419!2smx" width="600" height="300" frameborder="0" style="border:0" allowfullscreen
                     style="box-shadow: 0 .5rem 1rem rgb(56, 56, 56)!important;" loading="lazy">  </iframe>
                 </div>
@@ -40,57 +43,71 @@
         </div>
     </section>
 
-    <!-- CARRUSEL -->
-    <section>
-        <div class="container">
-            <div class="row justify-content-center pt-5 pb-3">
-                <div class="col-12 col-lg-10 ">
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="IMG/carrusel1.jpg" class="d-block w-100" loading="lazy">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="IMG/carrusel3.jpg" class="d-block w-100" loading="lazy">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="IMG/carrusel4.jpg" class="d-block w-100" loading="lazy">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+    <section class="section-menu ">
+        <div class="row margen posicion">
+            <div class="col text-center ">
+                <a class="text-decoration-none link-secondary" href="https://drive.google.com/file/d/1-VVvlEIscthD-GQzQmsJomUXOtY0K1hB/view?usp=sharing"><p class="display-4">Conoce nuestro menú</p></a>
             </div>
         </div>
     </section>
 
+    <!-- CARRUSEL -->
+    <!-- <section>
+        <div class="row margen justify-content-center pt-5 pb-3">
+            <div class="col-12 col-lg-10 ">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="IMG/carrusel2.jpg" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="display-6">Sanitización gratis al lavar tu auto</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG\carrusel3.jpg" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="display-6">El mejor precio</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG/carrusel1.jpg" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="display-6">¡La mejor Ubicación, cerca de ti!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+   
+
     <!-- FOOTER -->
-    <footer >
+    <footer class="">
         <div class="container text-white">
             <div class="row text-center pt-3">
                 <div class="col">
-                    <p class=""><i>Logo</i></p>
+                    <img class="img-fluid" src="IMG/Logo.png" width="100px" alt="">
                 </div>
             </div>
-            <div class="row text-center fs-5 justify-content-center">
-                <div class="col-12 col-md-2"><p>Inicio</p></div>
-                <div class="col-12 col-md-2"><p>Nosotros</p></div>
-                <div class="col-12 col-md-2"><p>Servicios</p></div>
-                <div class="col-12 col-md-2"><p>Contacto</p></div>
-                <hr>
-            </div>
-            <div class="row text-center text-secondary py-2">
-                <div class="col">
-                    <p class="">Todos los derechos reservados - 2022</p>
+            <hr>
+            <div class="row text-center fs-5 d-flex pb-3">
+                <div class="col text-white">
+                    <a class="text-decoration-none" href="https://www.facebook.com/"><img class="img-fluid " src="IMG/facebook.svg" alt=""></a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/"><img class="img-fluid" src="IMG/instagram.svg" alt=""></a>
+                    <a class="text-decoration-none" href="https://www.whatsapp.com/"><img class="img-fluid" src="IMG/whatsapp.svg" alt=""></a>
                 </div>
             </div>
+
         </div>
     </footer>
     <script src="BOOTSTRAP/js/bootstrap.bundle.js"></script>
